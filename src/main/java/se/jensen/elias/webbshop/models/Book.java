@@ -3,8 +3,8 @@ package se.jensen.elias.webbshop.models;
 public class Book extends Product {
     private String author;
 
-    public Book(String name, String price, String author) {
-        super(name, price);
+    public Book(String name, String price, String author, String id) {
+        super(name, price, id);
         this.author = author;
     }
 

@@ -4,6 +4,6 @@ public interface UserInterface {
 
     String input(String message);
 
-    void ShowMessage(String message);
+    void showMessage(String message);
 
 }

@@ -3,9 +3,9 @@ package se.jensen.elias.webbshop.models;
 public class Movie extends Product {
     String director;
 
-    public Movie(String name, String price, String director) {
+    public Movie(String name, String price, String director, String id) {
         this.director = director;
-        super(name, price);
+        super(name, price, id);
     }
 
     @Override

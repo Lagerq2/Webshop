@@ -10,7 +10,7 @@ public class DialogUI implements UserInterface {
     }
 
     @Override
-    public void ShowMessage(String message) {
+    public void showMessage(String message) {
         JOptionPane.showMessageDialog(null, message);
     }
 }

@@ -13,7 +13,7 @@ public class ConsoleUI implements UserInterface {
     }
 
     @Override
-    public void ShowMessage(String message) {
+    public void showMessage(String message) {
         System.out.println(message);
     }
 }
