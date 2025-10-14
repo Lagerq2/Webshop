@@ -2,6 +2,7 @@ package se.jensen.elias.webbshop.app;
 
 import se.jensen.elias.webbshop.models.Book;
 import se.jensen.elias.webbshop.models.Movie;
+import se.jensen.elias.webbshop.models.Pen;
 import se.jensen.elias.webbshop.models.Product;
 import se.jensen.elias.webbshop.services.FileHandler;
 
@@ -10,7 +11,7 @@ import java.util.Scanner;
 
 public class Menu {
     Scanner scanner = new Scanner(System.in);
-    private List<Product> products;
+    private final List<Product> products;
     private UserInterface ui;
 
     public Menu(List<Product> products) {
@@ -37,35 +38,37 @@ public class Menu {
     public void showAppMenu() {
 
         while (true) {
-            String menu = "1. Lägg till bok\n" +
-                    "2. Lägg till Bil\n" +
-                    "3. Visa produkter\n" +
-                    "4. Välj annat Gränssnitt\n" +
-                    "5. Spara och avsluta\n" +
-                    "Välj ett av alternativen: ";
-            String choice = ui.input(menu);
+
+            String choice = ui.showMenu();
 
             if (choice == null || choice.equals("0")) break;
 
             switch (choice) {
-                case "1":
+                case "1": //lägg till bok
                     String bokName = ui.input("Ange Boknamn: ");
-                    String bokPrice = ui.input("Ange pris: ");
+                    double bokPrice = Double.parseDouble(ui.input("Ange pris: "));
                     String bokAuthor = ui.input("Ange författare: ");
                     String bokId = ui.input("Ange artikelnummer: ");
                     products.add(new Book(bokName, bokPrice, bokAuthor, bokId));
                     break;
-                case "2":
-                    String movieModel = ui.input("Ange filmnamn: ");
-                    String moviePrice = ui.input("Ange pris: ");
-                    String movieBrand = ui.input("Ange Regissör: ");
+                case "2": //Lägg till film
+                    String movieName = ui.input("Ange filmnamn: ");
+                    double moviePrice = Double.parseDouble(ui.input("Ange pris: "));
+                    String movieDirector = ui.input("Ange Regissör: ");
                     String movieId = ui.input("Ange artikelnummer: ");
-                    products.add(new Movie(movieModel, moviePrice, movieBrand, movieId));
+                    products.add(new Movie(movieName, moviePrice, movieDirector, movieId));
                     break;
-                case "3":
+                case "3": //Lägg till penna
+                    String penName = ui.input("Ange namnet på pennan: ");
+                    double penPrice = Double.parseDouble(ui.input("Ange pris: "));
+                    String type = ui.input("Ange typ av penna: ");
+                    String penId = ui.input("Ange artikelnummer: ");
+                    products.add(new Pen(penName, penPrice, type, penId));
+                    break;
+                case "4": //Skriv ut produktlista
                     StringBuilder sb = new StringBuilder("Sparade produkter: \n");
                     for (Product product : products) {
-                        sb.append(product.getInfo()).append("\n");
+                        sb.append(product).append("\n");
                     }
                     if (products.isEmpty()) {
                         sb.append("Inga produkter sparade");
@@ -73,12 +76,15 @@ public class Menu {
                         ui.showMessage(sb.toString());
                     }
                     break;
-                case "4":
+                case "5":
+                    ui.searchProduct(products);
+                    break;
+                case "6":
                     showWelcomeMenu();
                     break;
-                case "5":
+                case "7":
                     FileHandler.saveToFile("src/main/java/se/jensen/elias/webbshop/data/products.txt", products);
-                    break;
+                    return;
             }
         }
     }

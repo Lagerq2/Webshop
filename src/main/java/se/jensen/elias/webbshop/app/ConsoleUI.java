@@ -1,10 +1,14 @@
 package se.jensen.elias.webbshop.app;
 
+
+import se.jensen.elias.webbshop.models.Product;
+
+import java.util.List;
 import java.util.Scanner;
 
 public class ConsoleUI implements UserInterface {
 
-    private Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
 
     @Override
     public String input(String message) {
@@ -16,4 +20,42 @@ public class ConsoleUI implements UserInterface {
     public void showMessage(String message) {
         System.out.println(message);
     }
+
+    @Override
+    public String showMenu() {
+        System.out.println("""
+                      --- MENY ---
+                  1. Lägg till Bok"
+                  2. Lägg till Film
+                  3. Lägg till Penna
+                  4. Skriv ut produktlista
+                  5. Skriv ut en produkt
+                  6. Välj annat gränssnitt
+                  7. Spara och avsluta
+                """);
+        return scanner.nextLine();
+
+    }
+
+    @Override
+    public void searchProduct(List<Product> products) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ange artikelnummer: ");
+        String id = scanner.nextLine();
+
+        Product found = null;
+        for (Product p : products) {
+            if (p.getId().equals(id)) {
+                found = p;
+                break;
+            }
+        }
+
+        if (found != null) {
+            System.out.println("Produkten hittades:\n" + found);
+        } else {
+            System.out.println("Ingen produkt hittades med ID: " + id);
+        }
+    }
+
 }

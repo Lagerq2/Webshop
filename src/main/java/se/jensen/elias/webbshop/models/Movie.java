@@ -1,16 +1,25 @@
 package se.jensen.elias.webbshop.models;
 
 public class Movie extends Product {
-    String director;
+    private String director;
 
-    public Movie(String name, String price, String director, String id) {
-        this.director = director;
+    public Movie(String name, double price, String director, String id) {
         super(name, price, id);
+        this.director = director;
+    }
+
+    public String getExtra() {
+        return director;
     }
 
     @Override
-    public String getInfo() {
-
-        return super.getInfo() + "Film namn: " + getName() + " Regissör: " + director;
+    public String category() {
+        return "Film";
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + " - Regissör: " + director;
+    }
+
 }
