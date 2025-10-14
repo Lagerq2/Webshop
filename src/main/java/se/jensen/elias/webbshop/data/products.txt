@@ -1,3 +1,140 @@
-Book;Harry potter;Rowlings;175.0;111
-Movie;Starwars;Lucas;200.0;222
-Pen;Jetstream;Bläck;29.0;333
+Book;Harry Potter och De vises sten;J.K. Rowling;175.0;100001
+Book;Sagan om Ringen;J.R.R. Tolkien;199.0;100002
+Book;1984;George Orwell;159.0;100003
+Book;Män som hatar kvinnor;Stieg Larsson;189.0;100004
+Book;Da Vinci-koden;Dan Brown;169.0;100005
+Book;Hungerspelen;Suzanne Collins;149.0;100006
+Book;En man som heter Ove;Fredrik Backman;179.0;100007
+Book;Djurfarmen;George Orwell;129.0;100008
+Book;The Catcher in the Rye;J.D. Salinger;149.0;100009
+Book;Twilight;Stephenie Meyer;139.0;100010
+Book;Dune;Frank Herbert;209.0;100011
+Book;Det;Stephen King;229.0;100012
+Book;Carrie;Stephen King;159.0;100013
+Book;Inferno;Dan Brown;169.0;100014
+Book;Harry Potter och Fenixorden;J.K. Rowling;179.0;100015
+Book;Harry Potter och Halvblodsprinsen;J.K. Rowling;179.0;100016
+Book;Harry Potter och Dödsrelikerna;J.K. Rowling;189.0;100017
+Book;Fifty Shades of Grey;E. L. James;159.0;100018
+Book;Pestens tid;Stephen King;199.0;100019
+Book;Den gamle och havet;Ernest Hemingway;129.0;100020
+Book;Brott och straff;Fjodor Dostojevskij;189.0;100021
+Book;Stolthet och fördom;Jane Austen;149.0;100022
+Book;To Kill a Mockingbird;Harper Lee;169.0;100023
+Book;Metro 2033;Dmitry Glukhovsky;179.0;100024
+Book;Shining;Stephen King;189.0;100025
+Book;Liftarens guide till galaxen;Douglas Adams;139.0;100026
+Book;Gone Girl;Gillian Flynn;169.0;100027
+Book;Dracula;Bram Stoker;149.0;100028
+Book;Frankenstein;Mary Shelley;139.0;100029
+Book;Mio min Mio;Astrid Lindgren;129.0;100030
+Book;Bröderna Lejonhjärta;Astrid Lindgren;129.0;100031
+Book;Ronja Rövardotter;Astrid Lindgren;129.0;100032
+Book;Anne på Grönkulla;L.M. Montgomery;139.0;100033
+Book;Tills alla dör;Diamant Salihu;179.0;100034
+Book;Ett litet liv;Hanya Yanagihara;199.0;100035
+Book;Project Hail Mary;Andy Weir;189.0;100036
+Book;Artemis;Andy Weir;179.0;100037
+Book;Det slutna rummet;Maj Sjöwall;149.0;100038
+Book;Flickan från ingenstans;Justin Cronin;179.0;100039
+Book;Slutet;Mats Strandberg;169.0;100040
+Movie;Inception;Christopher Nolan;129.0;200001
+Movie;Interstellar;Christopher Nolan;139.0;200002
+Movie;The Dark Knight;Christopher Nolan;139.0;200003
+Movie;Titanic;James Cameron;99.0;200004
+Movie;Avatar;James Cameron;139.0;200005
+Movie;Terminator 2;James Cameron;119.0;200006
+Movie;Gladiator;Ridley Scott;129.0;200007
+Movie;Alien;Ridley Scott;119.0;200008
+Movie;The Martian;Ridley Scott;139.0;200009
+Movie;Fight Club;David Fincher;129.0;200010
+Movie;Seven;David Fincher;119.0;200011
+Movie;Gone Girl;David Fincher;129.0;200012
+Movie;Forrest Gump;Robert Zemeckis;109.0;200013
+Movie;Back to the Future;Robert Zemeckis;109.0;200014
+Movie;Cast Away;Robert Zemeckis;99.0;200015
+Movie;Pulp Fiction;Quentin Tarantino;129.0;200016
+Movie;Django Unchained;Quentin Tarantino;139.0;200017
+Movie;Inglourious Basterds;Quentin Tarantino;139.0;200018
+Movie;The Hateful Eight;Quentin Tarantino;119.0;200019
+Movie;Kill Bill Vol. 1;Quentin Tarantino;119.0;200020
+Movie;Kill Bill Vol. 2;Quentin Tarantino;119.0;200021
+Movie;The Godfather;Francis Ford Coppola;149.0;200022
+Movie;The Godfather Part II;Francis Ford Coppola;149.0;200023
+Movie;Apocalypse Now;Francis Ford Coppola;139.0;200024
+Movie;The Shawshank Redemption;Frank Darabont;139.0;200025
+Movie;The Green Mile;Frank Darabont;139.0;200026
+Movie;The Mist;Frank Darabont;119.0;200027
+Movie;The Matrix;Lana Wachowski;129.0;200028
+Movie;The Matrix Reloaded;Lana Wachowski;129.0;200029
+Movie;The Matrix Revolutions;Lana Wachowski;129.0;200030
+Movie;John Wick;Chad Stahelski;129.0;200031
+Movie;John Wick: Chapter 2;Chad Stahelski;129.0;200032
+Movie;John Wick: Chapter 3;Chad Stahelski;129.0;200033
+Movie;John Wick: Chapter 4;Chad Stahelski;139.0;200034
+Movie;Mad Max: Fury Road;George Miller;129.0;200035
+Movie;Fury;David Ayer;119.0;200036
+Movie;The Batman;Matt Reeves;139.0;200037
+Movie;The Prestige;Christopher Nolan;129.0;200038
+Movie;Oppenheimer;Christopher Nolan;149.0;200039
+Movie;Tenet;Christopher Nolan;139.0;200040
+Pen;Pilot G2;Bläck;29.0;300001
+Pen;BIC Cristal;Bläck;9.0;300002
+Pen;Faber-Castell Grip;Blyerts;19.0;300003
+Pen;Parker Jotter;Bläck;99.0;300004
+Pen;Staedtler Noris;Blyerts;15.0;300005
+Pen;Pentel EnerGel;Bläck;29.0;300006
+Pen;Sharpie Fine Point;Permanent;25.0;300007
+Pen;Stabilo Point 88;Fineliner;19.0;300008
+Pen;Pilot V5;Bläck;29.0;300009
+Pen;Lamy Safari;Bläck;149.0;300010
+Pen;Tombow AirPress;Bläck;79.0;300011
+Pen;Zebra Sarasa Clip;Bläck;39.0;300012
+Pen;Staedtler Triplus Fineliner;Fineliner;25.0;300013
+Pen;BIC M10;Bläck;15.0;300014
+Pen;Paper Mate InkJoy;Bläck;19.0;300015
+Pen;Rotring 600;Blyerts;199.0;300016
+Pen;Uni-ball Eye;Bläck;25.0;300017
+Pen;Uni-ball Signo;Bläck;29.0;300018
+Pen;Frixion Clicker;Raderbar;35.0;300019
+Pen;Pilot Super Grip;Bläck;19.0;300020
+Pen;Pilot RexGrip;Bläck;19.0;300021
+Pen;Pilot V7 Hi-Tecpoint;Bläck;29.0;300022
+Pen;Stabilo EASYgraph;Blyerts;25.0;300023
+Pen;Staedtler Tradition;Blyerts;15.0;300024
+Pen;Faber-Castell Perfect Pencil;Blyerts;59.0;300025
+Pen;Caran d’Ache 849;Bläck;149.0;300026
+Pen;Kaweco Classic Sport;Bläck;129.0;300027
+Pen;Lamy Al-Star;Bläck;159.0;300028
+Pen;TWSBI Eco;Bläck;199.0;300029
+Pen;Parker IM;Bläck;179.0;300030
+Pen;Cross Bailey;Bläck;199.0;300031
+Pen;Pelikan Jazz;Bläck;169.0;300032
+Pen;Waterman Hemisphere;Bläck;249.0;300033
+Pen;Montblanc Meisterstück;Bläck;699.0;300034
+Pen;Pilot Acroball;Bläck;25.0;300035
+Pen;Stabilo Sensor;Fineliner;19.0;300036
+Pen;Staedtler Mars Lumograph;Blyerts;29.0;300037
+Pen;BIC Intensity;Fineliner;15.0;300038
+Pen;Pilot Juice;Bläck;25.0;300039
+Pen;Pilot Precise V7;Bläck;29.0;300040
+Book;Ready Player One;Ernest Cline;179.0;100041
+Book;Neuromancer;William Gibson;169.0;100042
+Book;Snow Crash;Neal Stephenson;179.0;100043
+Book;The Hobbit;J.R.R. Tolkien;159.0;100044
+Book;The Two Towers;J.R.R. Tolkien;169.0;100045
+Book;The Return of the King;J.R.R. Tolkien;169.0;100046
+Book;The Silmarillion;J.R.R. Tolkien;179.0;100047
+Book;IT;Stephen King;199.0;100048
+Book;Misery;Stephen King;179.0;100049
+Book;Doctor Sleep;Stephen King;189.0;100050
+Movie;The Lord of the Rings: The Fellowship of the Ring;Peter Jackson;139.0;200041
+Movie;The Lord of the Rings: The Two Towers;Peter Jackson;139.0;200042
+Movie;The Lord of the Rings: The Return of the King;Peter Jackson;139.0;200043
+Movie;The Hobbit: An Unexpected Journey;Peter Jackson;139.0;200044
+Movie;The Hobbit: The Desolation of Smaug;Peter Jackson;139.0;200045
+Movie;The Hobbit: The Battle of the Five Armies;Peter Jackson;139.0;200046
+Movie;Avatar: The Way of Water;James Cameron;149.0;200047
+Movie;Top Gun: Maverick;Joseph Kosinski;139.0;200048
+Movie;Edge of Tomorrow;Doug Liman;129.0;200049
+Movie;Oblivion;Joseph Kosinski;129.0;200050

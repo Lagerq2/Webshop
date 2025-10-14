@@ -76,13 +76,16 @@ public class Menu {
                         ui.showMessage(sb.toString());
                     }
                     break;
-                case "5":
+
+                case "5": //Sök efter produkt
                     ui.searchProduct(products);
                     break;
-                case "6":
+
+                case "6": //Välj Gränssnitt igen
                     showWelcomeMenu();
                     break;
-                case "7":
+
+                case "7":  //Spara och avsluta
                     FileHandler.saveToFile("src/main/java/se/jensen/elias/webbshop/data/products.txt", products);
                     return;
             }

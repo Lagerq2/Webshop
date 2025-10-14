@@ -21,7 +21,7 @@ public class DialogUI implements UserInterface {
     public String showMenu() {
         String menu = """
                       --- MENY ---
-                  1. Lägg till Bok"
+                  1. Lägg till Bok
                   2. Lägg till Film
                   3. Lägg till Penna
                   4. Skriv ut produktlista

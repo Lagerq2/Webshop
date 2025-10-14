@@ -11,7 +11,7 @@ import java.util.List;
 
 public class FileHandler {
 
-    //Metod som returnerar en lista med peroukter
+    //Metod som returnerar en lista med produkter
     public static List<Product> readFromFile(String filename) {
         List<Product> products = new ArrayList<>();
         File file = new File("src/main/java/se/jensen/elias/webbshop/data/products.txt");

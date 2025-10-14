@@ -25,7 +25,7 @@ public class ConsoleUI implements UserInterface {
     public String showMenu() {
         System.out.println("""
                       --- MENY ---
-                  1. Lägg till Bok"
+                  1. Lägg till Bok
                   2. Lägg till Film
                   3. Lägg till Penna
                   4. Skriv ut produktlista
