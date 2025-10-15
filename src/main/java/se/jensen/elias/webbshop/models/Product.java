@@ -36,7 +36,7 @@ public abstract class Product {
 
     @Override
     public String toString() {
-        return "Artikelnummer [" + id + "] Produkttyp: (" + category() + ") " + name + " " + price + "kr ";
+        return "Artikelnummer: [" + id + "] Produkttyp: (" + category() + ") " + name + " " + price + "kr ";
     }
 }
 

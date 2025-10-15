@@ -138,3 +138,5 @@ Movie;Avatar: The Way of Water;James Cameron;149.0;200047
 Movie;Top Gun: Maverick;Joseph Kosinski;139.0;200048
 Movie;Edge of Tomorrow;Doug Liman;129.0;200049
 Movie;Oblivion;Joseph Kosinski;129.0;200050
+Pen;Jetstream;Bläck;29.0;12345
+Book;Harry Potter;Rowlings;175.0;1234567

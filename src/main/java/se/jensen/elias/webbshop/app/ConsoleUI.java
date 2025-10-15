@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ConsoleUI implements UserInterface {
-
+    //Scanner som är final, alltså den ska inte ändras
     private final Scanner scanner = new Scanner(System.in);
 
     @Override
@@ -21,6 +21,7 @@ public class ConsoleUI implements UserInterface {
         System.out.println(message);
     }
 
+    //Visar menyn
     @Override
     public String showMenu() {
         System.out.println("""
@@ -37,6 +38,7 @@ public class ConsoleUI implements UserInterface {
 
     }
 
+    //metod som jämför det du sökte med objekten i listan
     @Override
     public void searchProduct(List<Product> products) {
         Scanner scanner = new Scanner(System.in);
@@ -58,4 +60,14 @@ public class ConsoleUI implements UserInterface {
         }
     }
 
+    //Felhanterar om man inte skriver siffror på pris.
+    public double inputDouble(String message){
+        while (true) {
+            try {
+                return Double.parseDouble(input(message));
+            } catch (NumberFormatException e) {
+                showMessage("Fel: Du måste skriva enbart med siffror. Försök igen!");
+            }
+        }
+    }
 }

@@ -17,6 +17,7 @@ public class DialogUI implements UserInterface {
         JOptionPane.showMessageDialog(null, message);
     }
 
+    //Menyn som skrivs ut men JOptionPane
     @Override
     public String showMenu() {
         String menu = """
@@ -32,6 +33,7 @@ public class DialogUI implements UserInterface {
         return JOptionPane.showInputDialog(null, menu);
     }
 
+    //Metod som jämför det du söker med objekten i listan
     @Override
     public void searchProduct(List<Product> products) {
         String id = JOptionPane.showInputDialog(null, "Ange artikelnummer: ");
@@ -52,6 +54,18 @@ public class DialogUI implements UserInterface {
             JOptionPane.showMessageDialog(null, "Produkten hittades:\n" + found);
         } else {
             JOptionPane.showMessageDialog(null, "Ingen produkt hittades med ID: " + id);
+        }
+    }
+
+    //Felhanterar om man inte skriver siffror på pris
+    public double inputDouble(String message) {
+
+        while (true) {
+            try {
+                return Double.parseDouble(input(message));
+            } catch (NumberFormatException e) {
+                showMessage("Fel: Du måste skriva pris enbart med siffror. Försök igen!");
+            }
         }
     }
 }

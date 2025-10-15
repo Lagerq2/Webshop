@@ -26,7 +26,9 @@ public class FileHandler {
 
             while ((line = br.readLine()) != null) {
 
-                //Delar upp objekten vid ; och återskapar dem från filen
+                /*Delar upp objekten vid ; och återskapar dem från filen
+                Och gör objekt av det och sparar i listan
+                 */
                 String[] parts = line.split(";");
                 if (parts.length >= 4) {
                     String type = parts[0];
@@ -35,7 +37,9 @@ public class FileHandler {
                     double price = Double.parseDouble(parts[3]);
                     String id = parts[4];
 
-                    //Avgör om det är bok eller film
+                    /*Avgör om det är bok eller film
+                    Och skapar sedan objektet och lägger till den i listan
+                     */
                     switch (type) {
                         case "Book":
                             products.add(new Book(name, price, extra, id));
